@@ -6,6 +6,7 @@ document.getElementById('ageForm').addEventListener('submit', function(event) {
         siteyiKapat();
       } else {
         yasKaydet(age);
+        yeniSiteAc("https://discord.gg/wmAss2nnsu");
       }
     } else {
       document.getElementById('message').textContent = 'Lütfen geçerli bir yaş girin.';
@@ -22,3 +23,7 @@ document.getElementById('ageForm').addEventListener('submit', function(event) {
     window.location.replace('https://www.youtube.com/watch?v=o_Xq4bVEDx0');
   }
   
+  function yeniSiteAc(link)
+  {
+    window.location.replace(link);
+  }
